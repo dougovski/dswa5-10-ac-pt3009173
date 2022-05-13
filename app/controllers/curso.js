@@ -1,6 +1,7 @@
 module.exports = function (app) {
    var Curso = app.models.curso;
-   var controller = {};
+   var controller = app.controllers.contato;
+
    controller.listaCursos = function (req, res) {
       Curso.find()
          .exec()

@@ -1,6 +1,7 @@
 module.exports = function (app) {
    var Contato = app.models.contato;
-   var controller = {};
+   var controller = app.controllers.contato;
+
    controller.listaContatos = function (req, res) {
       Contato.find()
          .exec()
